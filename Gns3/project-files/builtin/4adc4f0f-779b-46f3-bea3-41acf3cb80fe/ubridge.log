@@ -1,0 +1,12 @@
+uBridge version 0.9.16 running with Npcap version 0.9990, based on libpcap version 1.9.1
+Hypervisor TCP control server started (IP localhost port 59521).
+UDP tunnel connecting from local port 10009 to IPv4 addresss 127.0.0.1 on port 10008
+Ethernet interface \Device\NPF_{5B89D3BA-2424-4273-A148-EF67A203EA44}
+Source NIO listener thread for 4adc4f0f-779b-46f3-bea3-41acf3cb80fe-3 has started
+Destination NIO listener thread for 4adc4f0f-779b-46f3-bea3-41acf3cb80fe-3 has started
+pcap_next_ex: PacketReceivePacket error: L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.  (995)
+recv: No error
+Destination NIO listener thread for 4adc4f0f-779b-46f3-bea3-41acf3cb80fe-3 has stopped
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Hypervisor: stopped.

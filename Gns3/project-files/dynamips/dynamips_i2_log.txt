@@ -1,0 +1,37 @@
+Jun 05 00:05:46.443 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 05 00:05:46.447 HYPERVISOR: Started on IP = localhost, TCP port = 58051.
+Jun 05 00:05:46.836 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 05 00:05:46.838 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\asus\GNS3\projects\Gns3\project-files\dynamips 
+Jun 05 00:05:46.838 GENERAL: working_dir=C:\Users\asus\GNS3\projects\Gns3\project-files\dynamips
+Jun 05 00:05:46.840 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\asus\GNS3\projects\Gns3\project-files\dynamips\25e6df20-0e7e-4cb2-b8df-f78833ad9c1e 
+Jun 05 00:05:46.845 GENERAL: working_dir=C:\Users\asus\GNS3\projects\Gns3\project-files\dynamips\25e6df20-0e7e-4cb2-b8df-f78833ad9c1e
+Jun 05 00:05:46.846 HYPERVISOR: exec_cmd: vm create R1 1 c3600 
+Jun 05 00:05:46.853 VM: VM R1 created.
+Jun 05 00:05:46.855 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5001 
+Jun 05 00:05:46.856 HYPERVISOR: exec_cmd: c3600 get_mac_addr R1 
+Jun 05 00:05:46.859 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/asus/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Jun 05 00:05:46.861 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 05 00:05:46.862 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x603d2918 
+Jun 05 00:05:46.864 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 05 00:05:46.865 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Jun 05 00:05:46.867 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+Jun 05 00:05:46.868 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Jun 05 00:05:46.871 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 05 00:05:46.871 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 NM-1FE-TX 
+Jun 05 00:05:46.873 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 05 00:05:46.874 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-1FE-TX 
+Jun 05 00:05:46.876 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 05 00:05:46.877 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 NM-4T 
+Jun 05 00:05:47.019 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/asus/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Jun 05 00:05:49.025 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/asus/GNS3/images/IOS/c3640-jk9s-mz.124-16.image 
+Jun 05 00:06:01.550 HYPERVISOR: exec_cmd: nio create_udp udp-0ed3bd8c-8cbd-4531-8ee8-816e8ce54fd3 10001 127.0.0.1 10002 
+Jun 05 00:06:02.417 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-0ed3bd8c-8cbd-4531-8ee8-816e8ce54fd3 
+Jun 05 00:06:02.420 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 05 00:06:10.496 HYPERVISOR: exec_cmd: nio create_udp udp-98ee8a62-7504-4266-b76e-787c80d5c6c0 10005 127.0.0.1 10006 
+Jun 05 00:06:10.505 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-98ee8a62-7504-4266-b76e-787c80d5c6c0 
+Jun 05 00:06:10.506 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 05 04:05:33.355 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 05 04:05:33.359 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jun 05 04:05:44.418 HYPERVISOR: Stopped.
+Jun 05 04:05:44.419 VM: VM R1 destroyed.
+Jun 05 04:05:44.421 GENERAL: reset done.

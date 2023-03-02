@@ -1,0 +1,83 @@
+Oct 12 17:22:29.326 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Oct 12 17:22:29.331 HYPERVISOR: Started on IP = localhost, TCP port = 54445.
+Oct 12 17:22:29.456 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 12 17:22:29.457 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\asus\GNS3\projects\projet1.admin\project-files\dynamips 
+Oct 12 17:22:29.470 GENERAL: working_dir=C:\Users\asus\GNS3\projects\projet1.admin\project-files\dynamips
+Oct 12 17:22:29.471 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\asus\GNS3\projects\projet1.admin\project-files\dynamips\ab417a43-77fe-4616-b243-285aa9af6dd1 
+Oct 12 17:22:29.473 GENERAL: working_dir=C:\Users\asus\GNS3\projects\projet1.admin\project-files\dynamips\ab417a43-77fe-4616-b243-285aa9af6dd1
+Oct 12 17:22:29.473 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Oct 12 17:22:29.479 VM: VM R1 created.
+Oct 12 17:22:29.480 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5002 
+Oct 12 17:22:29.481 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Oct 12 17:22:29.482 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:22:29.482 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Oct 12 17:22:29.484 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Oct 12 17:22:29.486 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Oct 12 17:22:29.487 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:22:29.488 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60630d08 
+Oct 12 17:22:29.491 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/asus/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Oct 12 17:22:29.493 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.3904.0000 
+Oct 12 17:22:29.494 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Oct 12 17:22:29.495 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Oct 12 17:22:29.497 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:22:29.497 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-GE 
+Oct 12 17:22:29.498 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:22:29.499 HYPERVISOR: exec_cmd: vm slot_add_binding R1 2 0 PA-2FE-TX 
+Oct 12 17:22:29.501 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:22:29.502 HYPERVISOR: exec_cmd: vm slot_add_binding R1 3 0 PA-8T 
+Oct 12 17:22:29.503 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:22:29.504 HYPERVISOR: exec_cmd: vm slot_add_binding R1 4 0 PA-4E 
+Oct 12 17:24:35.201 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:24:35.202 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 1 0 
+Oct 12 17:24:35.204 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:24:35.205 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-FE-TX 
+Oct 12 17:24:35.207 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:24:35.208 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 2 0 
+Oct 12 17:24:35.209 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:24:35.210 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 3 0 
+Oct 12 17:24:35.212 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:24:35.213 HYPERVISOR: exec_cmd: vm slot_remove_binding R1 4 0 
+Oct 12 17:24:47.807 HYPERVISOR: exec_cmd: nio create_udp udp-4574c5cc-0601-44ed-b49d-e1f527cf53cc 10002 127.0.0.1 10003 
+Oct 12 17:24:48.108 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-4574c5cc-0601-44ed-b49d-e1f527cf53cc 
+Oct 12 17:24:48.109 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:24:54.690 HYPERVISOR: exec_cmd: nio create_udp udp-90a328fc-4f04-483c-b44d-72f9e07b4989 10006 127.0.0.1 10007 
+Oct 12 17:24:54.700 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-90a328fc-4f04-483c-b44d-72f9e07b4989 
+Oct 12 17:24:54.702 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:25:04.304 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Oct 12 17:25:04.310 VM: VM Ghost created.
+Oct 12 17:25:04.313 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/asus/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Oct 12 17:25:04.315 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Oct 12 17:25:04.317 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\asus\GNS3\projects\projet1.admin\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Oct 12 17:25:04.319 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Oct 12 17:25:04.321 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 12 17:25:04.331 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Oct 12 17:25:04.331 HYPERVISOR: exec_cmd: vm start Ghost 
+Oct 12 17:25:05.489 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Oct 12 17:25:05.495 HYPERVISOR: exec_cmd: vm stop Ghost 
+Oct 12 17:25:05.599 VM: VM Ghost shutdown.
+Oct 12 17:25:05.601 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Oct 12 17:25:05.603 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Oct 12 17:25:05.603 VM: VM Ghost destroyed.
+Oct 12 17:25:05.610 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 12 17:25:05.610 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\asus\GNS3\projects\projet1.admin\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Oct 12 17:25:05.611 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 17:25:05.612 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Oct 12 17:25:05.613 HYPERVISOR: exec_cmd: vm start R1 
+Oct 12 17:25:36.130 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 12 17:26:06.131 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 12 18:31:47.436 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 18:31:47.441 HYPERVISOR: exec_cmd: vm stop R1 
+Oct 12 18:31:47.740 VM: VM R1 shutdown.
+Oct 12 18:31:47.747 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 12 18:31:50.138 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Oct 12 18:31:50.141 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\asus\GNS3\projects\projet1.admin\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Oct 12 18:31:50.143 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 18:31:50.153 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Oct 12 18:31:50.154 HYPERVISOR: exec_cmd: vm start R1 
+Oct 12 23:59:24.276 HYPERVISOR: exec_cmd: vm get_status R1 
+Oct 12 23:59:24.335 HYPERVISOR: exec_cmd: vm stop R1 
+Oct 12 23:59:25.102 VM: VM R1 shutdown.
+Oct 12 23:59:25.117 HYPERVISOR: exec_cmd: vm extract_config R1 
+Oct 12 23:59:34.575 HYPERVISOR: Stopped.
+Oct 12 23:59:34.576 VM: VM R1 destroyed.
+Oct 12 23:59:34.586 GENERAL: reset done.

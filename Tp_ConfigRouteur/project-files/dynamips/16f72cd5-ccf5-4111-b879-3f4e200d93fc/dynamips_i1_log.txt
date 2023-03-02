@@ -1,0 +1,59 @@
+Nov 16 14:20:17.582 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 16 14:20:17.583 HYPERVISOR: Started on IP = localhost, TCP port = 57820.
+Nov 16 14:20:17.743 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 16 14:20:17.744 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\asus\GNS3\projects\Tp_ConfigRouteur\project-files\dynamips 
+Nov 16 14:20:17.756 GENERAL: working_dir=C:\Users\asus\GNS3\projects\Tp_ConfigRouteur\project-files\dynamips
+Nov 16 14:20:17.756 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\asus\GNS3\projects\Tp_ConfigRouteur\project-files\dynamips\16f72cd5-ccf5-4111-b879-3f4e200d93fc 
+Nov 16 14:20:17.757 GENERAL: working_dir=C:\Users\asus\GNS3\projects\Tp_ConfigRouteur\project-files\dynamips\16f72cd5-ccf5-4111-b879-3f4e200d93fc
+Nov 16 14:20:17.758 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Nov 16 14:20:17.761 VM: VM R1 created.
+Nov 16 14:20:17.762 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Nov 16 14:20:17.762 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Nov 16 14:20:17.763 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 16 14:20:17.764 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Nov 16 14:20:17.765 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Nov 16 14:20:17.766 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Nov 16 14:20:17.767 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 16 14:20:17.767 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60630d08 
+Nov 16 14:20:17.770 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/asus/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 16 14:20:17.770 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.0d7c.0000 
+Nov 16 14:20:17.771 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Nov 16 14:20:17.772 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Nov 16 14:20:17.773 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 16 14:20:17.774 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-FE-TX 
+Nov 16 14:20:20.948 HYPERVISOR: exec_cmd: nio create_udp udp-5a69c4f9-dbbd-4677-9dcd-b628ab796ead 10002 127.0.0.1 10003 
+Nov 16 14:20:21.252 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-5a69c4f9-dbbd-4677-9dcd-b628ab796ead 
+Nov 16 14:20:21.254 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 16 14:20:21.877 HYPERVISOR: exec_cmd: nio create_udp udp-bcaac5fa-353d-4fc1-a56a-eec7623bf789 10006 127.0.0.1 10007 
+Nov 16 14:20:21.886 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-bcaac5fa-353d-4fc1-a56a-eec7623bf789 
+Nov 16 14:20:21.887 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 16 14:20:29.446 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Nov 16 14:20:29.450 VM: VM Ghost created.
+Nov 16 14:20:29.453 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/asus/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Nov 16 14:20:29.455 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 16 14:20:29.456 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\asus\GNS3\projects\Tp_ConfigRouteur\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Nov 16 14:20:29.457 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Nov 16 14:20:29.476 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 16 14:20:29.479 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Nov 16 14:20:29.480 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 16 14:20:29.948 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 16 14:20:29.950 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 16 14:20:30.142 VM: VM Ghost shutdown.
+Nov 16 14:20:30.143 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 16 14:20:30.144 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 16 14:20:30.145 VM: VM Ghost destroyed.
+Nov 16 14:20:30.148 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 16 14:20:30.149 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\asus\GNS3\projects\Tp_ConfigRouteur\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Nov 16 14:20:30.149 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 16 14:20:30.150 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 16 14:20:30.150 HYPERVISOR: exec_cmd: vm start R1 
+Nov 16 14:21:00.489 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 16 15:28:23.940 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 16 15:28:24.085 HYPERVISOR: exec_cmd: vm stop R1 
+Nov 16 15:28:24.349 VM: VM R1 shutdown.
+Nov 16 15:28:24.362 HYPERVISOR: exec_cmd: vm extract_config R1 
+Nov 16 15:28:47.361 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Nov 16 15:28:47.363 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\asus\GNS3\projects\Tp_ConfigRouteur\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Nov 16 15:28:47.365 HYPERVISOR: exec_cmd: vm get_status R1 
+Nov 16 15:28:47.370 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Nov 16 15:28:47.373 HYPERVISOR: exec_cmd: vm start R1 
